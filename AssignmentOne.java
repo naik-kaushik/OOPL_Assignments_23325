@@ -74,20 +74,53 @@ public class AssignmentOne {
         double i2 = s.nextDouble();
         Complex c1 = new Complex(r1,i1);
         Complex c2 = new Complex(r2,i2);
-        Complex mulResult = c1.mulComplex(c2);
-        System.out.println("After Multiplication ..");
-        mulResult.displayComplex();
-        Complex addResult = c1.addComplex(c2);
-        System.out.println("After Addition...");
-        addResult.displayComplex();
-        Complex subResult = c1.subComplex(c2);
-        System.out.println("After Subtraction...");
-        subResult.displayComplex();
-        Complex divResult = c1.divComplex(c2);
-        System.out.println("After Division...");
-        divResult.displayComplex();
-
-
-
+        while(true)
+        {
+            System.out.println("-".repeat(28) + "MENU" +"-".repeat(28));
+            System.out.println("Below are the Commands ⬇");
+            System.out.println("-".repeat(60));
+            System.out.println("1️⃣ Enter 1 to perform ADDITION of Complex numbers C1 and C2");
+            System.out.println("2️⃣ Enter 2 to perform SUBTRACTION of Complex numbers C1 and C2");
+            System.out.println("3️⃣ Enter 3 to perform MULTIPLICATION of Complex numbers C1 and C2");
+            System.out.println("4️⃣ Enter 4 to perform ADDITION of Complex numbers C1 and C2");
+            System.out.println("5️⃣ Enter 5 to 'QUIT' the program ");
+            System.out.println("-".repeat(60));
+            System.out.println("Enter Your Command ➡");
+            int ch = s.nextInt();
+            switch(ch)
+            {
+                case 1:
+                    System.out.println("-".repeat(60));
+                    Complex addResult = c1.addComplex(c2);
+                    System.out.println("👉  After Addition...");
+                    addResult.displayComplex();
+                    System.out.println("-".repeat(60));
+                    break;
+                case 2:
+                    System.out.println("-".repeat(60));
+                    Complex subResult = c1.subComplex(c2);
+                    System.out.println("👉 After Subtraction...");
+                    subResult.displayComplex();
+                    System.out.println("-".repeat(60));
+                    break;
+                case 3:
+                    System.out.println("-".repeat(60));
+                    Complex mulResult = c1.mulComplex(c2);
+                    System.out.println("👉 After Multiplication ..");
+                    mulResult.displayComplex();
+                    System.out.println("-".repeat(60));
+                    break;
+                case 4:
+                    System.out.println("-".repeat(60));
+                    Complex divResult = c1.divComplex(c2);
+                    System.out.println("👉 After Division...");
+                    divResult.displayComplex();
+                    System.out.println("-".repeat(60));
+                    break;
+                case 5:
+                    System.out.println("------Thank You !!------");
+                    System.exit(0);
+            }
+        }
     }
 }
