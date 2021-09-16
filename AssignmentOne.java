@@ -85,35 +85,35 @@ public class AssignmentOne {
             System.out.println("[4] Enter 4 to perform ADDITION of Complex numbers C1 and C2");
             System.out.println("[5] Enter 5 to 'QUIT' the program ");
             System.out.println("-".repeat(60));
-            System.out.println("Enter Your Command -->");
+            System.out.println("Enter Your Command ➡");
             int ch = s.nextInt();
             switch(ch)
             {
                 case 1:
                     System.out.println("-".repeat(60));
                     Complex addResult = c1.addComplex(c2);
-                    System.out.println("=>  After Addition...");
+                    System.out.println("-->  After Addition...");
                     addResult.displayComplex();
                     System.out.println("-".repeat(60));
                     break;
                 case 2:
                     System.out.println("-".repeat(60));
                     Complex subResult = c1.subComplex(c2);
-                    System.out.println("=> After Subtraction...");
+                    System.out.println("--> After Subtraction...");
                     subResult.displayComplex();
                     System.out.println("-".repeat(60));
                     break;
                 case 3:
                     System.out.println("-".repeat(60));
                     Complex mulResult = c1.mulComplex(c2);
-                    System.out.println("=> After Multiplication ..");
+                    System.out.println("--> After Multiplication ..");
                     mulResult.displayComplex();
                     System.out.println("-".repeat(60));
                     break;
                 case 4:
                     System.out.println("-".repeat(60));
                     Complex divResult = c1.divComplex(c2);
-                    System.out.println("=> After Division...");
+                    System.out.println("--> After Division...");
                     divResult.displayComplex();
                     System.out.println("-".repeat(60));
                     break;
