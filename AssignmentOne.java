@@ -85,7 +85,7 @@ public class AssignmentOne {
             System.out.println("[4] Enter 4 to perform ADDITION of Complex numbers C1 and C2");
             System.out.println("[5] Enter 5 to 'QUIT' the program ");
             System.out.println("-".repeat(60));
-            System.out.println("Enter Your Command ➡");
+            System.out.println("Enter Your Command -->");
             int ch = s.nextInt();
             switch(ch)
             {
